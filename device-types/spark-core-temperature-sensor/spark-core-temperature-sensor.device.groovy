@@ -21,7 +21,7 @@ preferences {
 }
 
 metadata {
-	definition (name: "Spark Core Temperature Sensor", namespace: "nicholaswilde/smartthings-spark-core-temperature-sensor", author: "Nicholas Wilde") {
+	definition (name: "Spark Core Temperature Sensor", namespace: "nicholaswilde/smartthings", author: "Nicholas Wilde") {
 		capability "Polling"
 		capability "Refresh"
 		capability "Temperature Measurement"
