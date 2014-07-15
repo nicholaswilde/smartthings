@@ -21,7 +21,7 @@ preferences {
 }
 
 metadata {
-	definition (name: "Spark Core Illuminance Sensor", namespace: "nicholaswilde/smartthings-spark-core-illuminance-sensor", author: "Nicholas Wilde") {
+	definition (name: "Spark Core Illuminance Sensor", namespace: "nicholaswilde/smartthings", author: "Nicholas Wilde") {
 		capability "Polling"
 		capability "Refresh"
 		capability "Illuminance Measurement"
