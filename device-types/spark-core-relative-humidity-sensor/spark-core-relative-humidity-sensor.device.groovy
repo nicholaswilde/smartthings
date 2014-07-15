@@ -21,7 +21,7 @@ preferences {
 }
 
 metadata {
-	definition (name: "Spark Core Relative Humidity Sensor", namespace: "nicholaswilde/smartthings-spark-core-relative-humidity-sensor", author: "Nicholas Wilde") {
+	definition (name: "Spark Core Relative Humidity Sensor", namespace: "nicholaswilde/smartthings", author: "Nicholas Wilde") {
 		capability "Polling"
 		capability "Refresh"
 		capability "Relative Humidity Measurement"
