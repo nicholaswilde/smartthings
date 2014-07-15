@@ -11,7 +11,7 @@
 // Automatically generated. Make future change here.
 definition(
     name: "Notify When On For",
-    namespace: "nicholaswilde/smartthings-notify-when-on-for",
+    namespace: "nicholaswilde/smartthings",
     author: "Nicholas Wilde",
     description: "Notify after switch has been on for X minutes.  If the switch/outlet is powered off prior to the 'time out,' then the scheduled time off is cancelled.",
     category: "Green Living",
