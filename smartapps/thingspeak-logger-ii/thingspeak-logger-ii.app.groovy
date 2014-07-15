@@ -19,7 +19,7 @@
 // Automatically generated. Make future change here.
 definition(
     name: "ThingSpeak Logger II",
-    namespace: "nicholaswilde/smartthings-thingspeak-logger-ii",
+    namespace: "nicholaswilde/smartthings",
     author: "Nicholas Wilde",
     description: "Log events to ThingSpeak",
     category: "Convenience",
