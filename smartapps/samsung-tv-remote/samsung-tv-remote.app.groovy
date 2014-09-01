@@ -15,7 +15,7 @@
 
 // Automatically generated. Make future change here.
 definition(
-    name: 			"Samsung TV Remote",
+    name: 		"Samsung TV Remote",
     namespace: 		"nicholaswilde/smartthings",
     author: 		"Nicholas Wilde",
     description: 	"Control Samsung Smart TVs using SmartThings",
