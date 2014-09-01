@@ -16,7 +16,7 @@
 // Automatically generated. Make future change here.
 definition(
     name: 			"Samsung TV Remote",
-    namespace: 		"nicholaswilde",
+    namespace: 		"nicholaswilde/smartthings",
     author: 		"Nicholas Wilde",
     description: 	"Control Samsung Smart TVs using SmartThings",
     iconUrl: 		"http://icons.iconarchive.com/icons/icons8/windows-8/512/Network-Remote-Control-icon.png",
