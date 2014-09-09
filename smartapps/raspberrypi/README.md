@@ -36,13 +36,13 @@ $ sudo reboot
    ...
    ```
  6. Stop the current WebIOPi process
- ```
- $ sudo service webiopi stop
- ```
+   ```
+   $ sudo service webiopi stop
+   ```
  7. Manually start WebIOPi to make sure there aren't any errors.
- ```
- $ sudo webiopi -d -c /etc/webiopi/config
- ```
+   ```
+   $ sudo webiopi -d -c /etc/webiopi/config
+   ```
  8. Check that WebIOPi is up and running by going to http://<yourip>:8000/
  9. Using your farvorite REST client, test to see that the REST commands are working.
  ```
