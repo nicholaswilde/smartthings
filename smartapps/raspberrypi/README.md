@@ -13,11 +13,11 @@ $ sudo apt-get install python3-pip
 $ sudo pip-3.2 install psutil
 ```
    3. Check that the install was successful
-```
-$ python3
->>> import psutil
->>> exit()
-```
+   ```
+   $ python3
+   >>> import psutil
+   >>> exit()
+   ```
  2. Reboot your Raspberry Pi.
 ```
 $ sudo reboot 
@@ -26,12 +26,15 @@ $ sudo reboot
  4. Download and install raspberrypi.py to some directory.
  5. Using the Framework basis tutorial as a baseline:
    1. Edit `/etc/webiopi/config:`
-```
-...
-[SCRIPTS]
-raspberrypi = /<somedirectory>/raspberry.py
-...
-```
+   ```
+   $ sudo nano /etc/webiopi/config
+   ```
+   ```
+   ...
+   [SCRIPTS]
+   raspberrypi = /<somedirectory>/raspberry.py
+   ...
+   ```
  6. Stop the current WebIOPi process
 ```
 $ sudo service webiopi stop
