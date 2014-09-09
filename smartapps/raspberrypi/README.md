@@ -4,7 +4,7 @@ A python script file for running with [WebIOPi](https://code.google.com/p/webiop
 ## Installation Instructions
  1. Install WebIOPi on your Raspberry Pi using [these directions](https://code.google.com/p/webiopi/wiki/INSTALL).
  2. Install psutil for Python3
-   1. Install [pip-3.2](https://github.com/pypa/pip)
+   * Install [pip-3.2](https://github.com/pypa/pip)
 ```
 $ sudo apt-get install python3-pip
 ```
@@ -13,11 +13,11 @@ $ sudo apt-get install python3-pip
 $ sudo pip-3.2 install psutil
 ```
    3. Check that the install was successful
-   ```
-   $ python3
-   >>> import psutil
-   >>> exit()
-   ```
+```
+$ python3
+>>> import psutil
+>>> exit()
+```
  2. Reboot your Raspberry Pi.
 ```
 $ sudo reboot 
@@ -26,15 +26,15 @@ $ sudo reboot
  4. Download and install raspberrypi.py to some directory.
  5. Using the Framework basis tutorial as a baseline:
    1. Edit `/etc/webiopi/config:`
-   ```
-   $ sudo nano /etc/webiopi/config
-   ```
-   ```
-   ...
-   [SCRIPTS]
-   raspberrypi = /<somedirectory>/raspberry.py
-   ...
-   ```
+```
+$ sudo nano /etc/webiopi/config
+```
+```
+...
+[SCRIPTS]
+raspberrypi = /<somedirectory>/raspberry.py
+...
+```
  6. Stop the current WebIOPi process
 ```
 $ sudo service webiopi stop
@@ -45,11 +45,11 @@ $ sudo webiopi -d -c /etc/webiopi/config
 ```
  8. Check that WebIOPi is up and running by going to http://<yourip>:8000/
  9. Using your farvorite REST client, test to see that the REST commands are working.
- ```
- username: webiopi
- password: raspberry
- ```
- ```
- POST http://<yourip>:8000/macros/getDiskUsage
- 43.9
- ```
+```
+username: webiopi
+password: raspberry
+```
+```
+POST http://<yourip>:8000/macros/getDiskUsage
+43.9
+```
