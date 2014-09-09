@@ -36,9 +36,9 @@ $ sudo reboot
    ...
    ```
  6. Stop the current WebIOPi process
-```
-$ sudo service webiopi stop
-```
+ ```
+ $ sudo service webiopi stop
+ ```
  7. Manually start WebIOPi to make sure there aren't any errors.
  ```
  $ sudo webiopi -d -c /etc/webiopi/config
