@@ -40,9 +40,16 @@ $ sudo reboot
 $ sudo service webiopi stop
 ```
  7. Manually start WebIOPi to make sure there aren't any errors.
+ ```
+ $ sudo webiopi -d -c /etc/webiopi/config
+ ```
  8. Check that WebIOPi is up and running by going to http://<yourip>:8000/
- 9. Using your brand of REST client, test to see that the REST commands are working.
-```
-POST http://<yourip>:8000/macros/getDiskUsage
-43.9
-```
+ 9. Using your farvorite REST client, test to see that the REST commands are working.
+ ```
+ username: webiopi
+ password: raspberry
+ ```
+ ```
+ POST http://<yourip>:8000/macros/getDiskUsage
+ 43.9
+ ```
