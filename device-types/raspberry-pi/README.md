@@ -69,4 +69,14 @@ The device type is a generic template for a specific type of device. The Raspber
    - Location: <your location, e.g. `Home`>
    - Hub: <your hub> This is a must or else the Raspberry Pi device won't work!
    - Group: Can leave blank.
- - 
+ - Click on the `Create` button.
+ - Click on the `Raspberry Pi` display name from the `My Devices` list.
+ - Go to `Preference` and click `edit`
+ - Enter in your settings;
+   - IP address: RPi IP address
+   - Port: `8000`(default for WebIOPi)
+   - WebIOPi username: `webiopi` (default for WebIOPi)
+   - WebIOPi password: `raspberry` (default for WebIOPi)
+ - Click the `Save` button.
+
+*Congratulations. Your Raspberry Pi should now be listed in the `Things` category of your SmartThings mobile app!*
