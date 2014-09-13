@@ -66,8 +66,8 @@ The device type is a generic template for a specific type of device. The Raspber
    - Device Network Id: `123` (can be anything at the moment because the Raspberry Pi device type will change it for you).
    - Type: `Raspberry Pi` (Name of your new device type)
    - Version: `Published`
-   - Location: <your location, e.g. `Home`>
-   - Hub: <your hub> This is a must or else the Raspberry Pi device won't work!
+   - Location: your location (e.g. `Home`)
+   - Hub: your hub (This is a must or else the Raspberry Pi device won't work!)
    - Group: Can leave blank.
  - Click on the `Create` button.
  - Click on the `Raspberry Pi` display name from the `My Devices` list.
