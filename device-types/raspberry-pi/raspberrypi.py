@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# To be used with WebIOPi <https://code.google.com/p/webiopi/>
+
 import webiopi
 import psutil
 import os
