@@ -62,10 +62,10 @@ The device type is a generic template for a specific type of device. The Raspber
  - Click on `My Devices` in the SmartThings Web IDE navigation menu.
  - Click on `+ New Device` button.
  - Specify the following fields:
-   - Name: Raspberry Pi
-   - Device Network Id: 123 (can be anything at the moment because the Raspberry Pi device type will change it for you).
-   - Type: Raspberry Pi (Name of your new device type)
-   - Version: PUblished
+   - Name: `Raspberry Pi`
+   - Device Network Id: `123` (can be anything at the moment because the Raspberry Pi device type will change it for you).
+   - Type: `Raspberry Pi` (Name of your new device type)
+   - Version: `Published`
    - Location: <your location, e.g. `Home`>
    - Hub: <your hub> This is a must or else the Raspberry Pi device won't work!
    - Group: Can leave blank.
@@ -79,4 +79,4 @@ The device type is a generic template for a specific type of device. The Raspber
    - WebIOPi password: `raspberry` (default for WebIOPi)
  - Click the `Save` button.
 
-*Congratulations. Your Raspberry Pi should now be listed in the `Things` category of your SmartThings mobile app!*
+**Congratulations. Your Raspberry Pi should now be listed in the `Things` category of your SmartThings mobile app!**
