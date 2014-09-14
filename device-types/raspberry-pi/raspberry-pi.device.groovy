@@ -29,7 +29,7 @@ preferences {
 }
 
 metadata {
-	definition (name: "Computer", namespace: "nicholaswilde/smartthings", author: "Nicholas Wilde") {
+	definition (name: "Raspberry Pi", namespace: "nicholaswilde/smartthings", author: "Nicholas Wilde") {
 		capability "Polling"
 		capability "Refresh"
 		capability "Temperature Measurement"
