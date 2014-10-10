@@ -18,6 +18,7 @@ def setup():
 # loop function is repeatedly called by WebIOPi
 def loop():
     # Do Nothing
+    sleep(0.1) # Prevent the CPU from running at 100%
     pass
 
 # destroy function is called at WebIOPi shutdown
