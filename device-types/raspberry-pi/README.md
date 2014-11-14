@@ -86,3 +86,8 @@ The device type is a generic template for a specific type of device. The Raspber
  - Click the `Save` button.
 
 **Congratulations. Your Raspberry Pi should now be listed in the `Things` category of your SmartThings mobile app!**
+
+### Troubleshooting
+ - Ensure that your SmartThings hub is up to date (see above).
+ - [Forum topic](http://community.smartthings.com/t/raspberry-pi-device-type/4969)
+ - Ensure that the `Device Network Id` and `Hub` fields are filled in under your Raspberry Pi device in your [Device List](https://graph.api.smartthings.com/device/list)
