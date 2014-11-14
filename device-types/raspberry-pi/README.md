@@ -5,6 +5,10 @@ The setup requires three things; the SmartThings Raspberry Pi Device Type, WebIO
 
 ![screenshot_2014-09-13-00-00-54 2](https://cloud.githubusercontent.com/assets/600019/4259800/f5aa3e10-3b13-11e4-9a89-f1753b44e1ea.jpg)
 
+### Check your SmartThings Hub firmware version
+Your firmware version needs to be greater than `000.010.00246`. Has been proven to work with `000.011.00603` and not with `000.010.00246`.
+ - Check your hub firmware version [here](https://graph.api.smartthings.com/hub/list).
+
 ### WebIOPi Installation Instructions
  - Following [these instructions](https://code.google.com/p/webiopi/wiki/INSTALL?tm=6) for installing WebIOPi.
 
