@@ -7,6 +7,7 @@ import psutil
 import os
 import json
 from threading import Timer
+from time import sleep
 
 GPIO = webiopi.GPIO
 
