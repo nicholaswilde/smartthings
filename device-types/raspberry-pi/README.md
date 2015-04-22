@@ -3,6 +3,8 @@ Monitor your [Raspberry Pi](http://www.raspberrypi.org/) with [SmartThings](http
 
 The setup requires three things; the SmartThings Raspberry Pi Device Type, WebIOPi, and the WebIOPi python script macro (raspberrypi.py).
 
+**Note:** If you're using a [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/), you might have to use [berryio](https://github.com/NeonHorizon/berryio). See [Ledridge's](https://github.com/Ledridge) [RaspberryPi2](https://github.com/Ledridge/SmartThings/blob/master/RaspberryPi2).
+
 ![screenshot_2014-09-13-00-00-54 2](https://cloud.githubusercontent.com/assets/600019/4259800/f5aa3e10-3b13-11e4-9a89-f1753b44e1ea.jpg)
 
 ### Check your SmartThings Hub firmware version
