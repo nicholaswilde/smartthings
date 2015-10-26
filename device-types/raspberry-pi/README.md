@@ -1,3 +1,6 @@
+## Deprecated
+Try using [berryio-smartthings](https://github.com/nicholaswilde/berryio-smartthings).
+
 ## Raspberry Pi Device Type
 Monitor your [Raspberry Pi](http://www.raspberrypi.org/) with [SmartThings](http://www.smartthings.com/) and [WebIOPi](https://code.google.com/p/webiopi/).
 
