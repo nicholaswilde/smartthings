@@ -1,24 +1,24 @@
 /* Plug-In ZWave Dimmer
 	 *
-	 * Variation of the pmjoen "Dimmer"
+	 * Variation of the pmjoen's "Dimmer-Switch-Levels"
 	 *
 	 * Device type adds set levels low, medium, and High for preset values (Moods).
 	 * Adds increment up and down buttons with ability to set value.
+     * Removes indicator from plug-in ZWave dimmer device
 	 *
-	 * pmjoen@yahoo.com
+	 * Nicholas Wilde
 	 * 20160814
 	 *
 	 * v1.0 - Initial release of device handler
 	 *  
 	*/
-	
 
 	metadata {
 		// Automatically generated. Make future change here.
 		definition (name: "Plug-In ZWave Dimmer", namespace: "nicholaswilde", author: "SmartThings") {
 			capability "Switch Level"
 			capability "Actuator"
-			capability "Indicator"
+			//capability "Indicator"
 			capability "Switch"
 			capability "Polling"
 			capability "Refresh"
@@ -34,7 +34,6 @@
 
 			attribute "currentState", "string"
 	        attribute "switch", "string"
-	
 
 			//fingerprint deviceId: "0x1101", inClusters: "0x26, 0x27, 0x70, 0x86, 0x72"
 		}
@@ -63,19 +62,19 @@
 			}
 	
 
-			standardTile("indicator", "device.indicatorStatus", width: 2, height: 2, inactiveLabel: false, decoration: "flat") {
+			/*standardTile("indicator", "device.indicatorStatus", width: 2, height: 2, inactiveLabel: false, decoration: "flat") {
 				state "when off", action:"indicator.indicatorWhenOn", icon:"st.indicators.lit-when-off"
 				state "when on", action:"indicator.indicatorNever", icon:"st.indicators.lit-when-on"
 				state "never", action:"indicator.indicatorWhenOff", icon:"st.indicators.never-lit"
-			}
+			}*/
 	
 
-			standardTile("refresh", "device.switch", width: 2, height: 2, inactiveLabel: false, decoration: "flat") {
+			standardTile("refresh", "device.switch", width: 3, height: 2, inactiveLabel: false, decoration: "flat") {
 				state "default", label:'', action:"refresh.refresh", icon:"st.secondary.refresh"
 			}
 	
 
-			valueTile("level", "device.level", inactiveLabel: false, decoration: "flat", width: 2, height: 2) {
+			valueTile("level", "device.level", inactiveLabel: false, decoration: "flat", width: 3, height: 2) {
 				state "level", label:'${currentValue} %', unit:"%", backgroundColor:"#ffffff"
 			}
 	
@@ -100,7 +99,8 @@
 	
 
 			main(["switch"])
-	        details(["switch", "low", "med", "high", "level", "indicator", "refresh"])
+	        //details(["switch", "low", "med", "high", "level", "indicator", "refresh"])
+            details(["switch", "low", "med", "high", "level", "refresh"])
 	        
 		}
 	    preferences {
@@ -235,14 +235,14 @@
 	}
 	
 
-	def createEvent(physicalgraph.zwave.commands.configurationv1.ConfigurationReport cmd, Map map) {
+	/*def createEvent(physicalgraph.zwave.commands.configurationv1.ConfigurationReport cmd, Map map) {
 	//def zwaveEvent(physicalgraph.zwave.commands.configurationv1.ConfigurationReport cmd) {
 		def value = "when off"
 		log.trace "ConfigurationReport"
 		if (cmd.configurationValue[0] == 1) {value = "when on"}
 		if (cmd.configurationValue[0] == 2) {value = "never"}
 		[name: "indicatorStatus", value: value, display: false]
-	}
+	}*/
 	
 
 	def createEvent(physicalgraph.zwave.Command cmd,  Map map) {
@@ -393,19 +393,19 @@
 	}
 	
 
-	def indicatorWhenOn() {
+	/*def indicatorWhenOn() {
 		sendEvent(name: "indicatorStatus", value: "when on", display: false)
 		zwave.configurationV1.configurationSet(configurationValue: [1], parameterNumber: 3, size: 1).format()
-	}
+	}*/
 	
 
-	def indicatorWhenOff() {
+	/*def indicatorWhenOff() {
 		sendEvent(name: "indicatorStatus", value: "when off", display: false)
 		zwave.configurationV1.configurationSet(configurationValue: [0], parameterNumber: 3, size: 1).format()
-	}
+	}*/
 	
 
-	def indicatorNever() {
+	/*def indicatorNever() {
 		sendEvent(name: "indicatorStatus", value: "never", display: false)
 		zwave.configurationV1.configurationSet(configurationValue: [2], parameterNumber: 3, size: 1).format()
-	}
+	}*/
